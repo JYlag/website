@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <form action="/signup" method="post" class="form-border">
+            <div>
+                <div>
+                    <h2 class="form-header">Sign Up</h2>
+                </div>
+                <table>
+                    <tr>
+                        <div>
+                            <div>
+                                <label for="username"><input name="username" type="text" value="{{ username }}" class="form-control input-sm" placeholder="Username"></label>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <div>
+                                <label for="password"><input name="password" type="password" class="form-control input-sm" placeholder="Password"></label>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <div>
+                                <label for="verify"><input name="verify" type="password" class="form-control input-sm" placeholder="Verify Password"></label>
+                            </div>
+                        </div>
+                    </tr>
+                </table>
+                {% with errors = get_flashed_messages(category_filter=["error"]) %}
+                {% if errors %}
+                <div class="container">
+                    <div class="container">
+                        <ul class="error">
+                            {% for error in errors %}
+                                <li>{{ error }}</li>
+                                <br />
+                            {% endfor  %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+                {% endwith %}
+                <div class="container-fluid">
+                    <input type="submit" value="Sign up!">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

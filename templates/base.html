@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Joe Ylagan - Seattle, WA</title>
+    <meta name="author" content="Joe Ylagan" />
+    <meta name="description" content="My personal digital portfolio/blog" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9a9a9a" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800" rel="stylesheet">
+</head>
+
+<body>
+    <header class="nav justify-content-center">
+        <nav>
+            <ul style="padding: 0;">
+                <a href="home">home</a>
+                <a href="portfolio">portfolio</a>
+                <a href="contact">contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

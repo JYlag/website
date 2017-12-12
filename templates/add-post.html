@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="/add-post", method="post">
+        <table>
+            <div>
+                <tr>
+                    <td>
+                        <label for="title">Title:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="title" value="{{ title }}" class="form-control" style="dis"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="summary">Summary:</label>
+                    </td>
+                    <td>
+                        <textarea type="text" name="summary" value="{{ summary }}" class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="body">Body:</label>
+                    </td>
+                    <td>
+                        <textarea type="text" name="body" value="{{ body }}" class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="img">Image Path:</label>
+                    </td>
+                    <td>
+                        <textarea type="text" name="img" value="{{ img }}" class="form-control"></textarea>
+                    </td>
+                </tr>
+            </div>
+        </table>
+        <input type="submit" value="Submit Post!"/>
+    </form>
+{% endblock %}

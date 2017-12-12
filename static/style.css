@@ -1,0 +1,140 @@
+
+    .home_photo {
+        height: 93vh;
+        width: 99vw;
+    }
+
+    .holder {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    nav ul {
+        margin: 0.7em;
+        text-align: center;
+    }
+
+    /* navigation bar */
+    nav ul a {
+        font-family: Nunito;
+        font-size: 25px;
+        color: dimgrey;
+        padding: 0px 25px;
+        text-decoration: none;
+    }
+
+    nav ul a:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Controls left column and sets picture */
+    .col-sm-5 {
+        height: 93vh;
+        padding: 5vh 0vw 0 20vw;
+        text-align: center;
+    }
+
+    /* Controls right column and sets bio */
+    .col-sm-7 {
+        height: 93vh;
+        padding: 10vh 18vw 0 5vw;
+    }
+
+    /* Sets photo size on contact page and adds a round border */
+    #contact_photo {
+        height: 35vh;
+        border: 2px solid dimgrey;
+        border-radius: 200px;
+    }
+
+    /* Centers the social media icons and spaces them evenly */
+    .fa {
+        font-size: 35px;
+        text-align: center;
+        padding: 5vh 20px;
+    }
+
+    p {
+        font-family: Dosis;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /* Social media icons */
+    #social a {
+        text-decoration: none;
+    }
+
+    /* Form field designs */
+    input[type=text], input[type=password], textarea {
+        width: 15vw;
+        padding: 5px 5px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid dimgrey;
+        border-radius: 8px;
+    }
+
+    /* Submit button designs */
+    input[type=submit] {
+        background-color: #3385ff;
+        color: white;
+        width: 5vw;
+        padding: 5px 5px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1.5px solid #3385ff;
+        border-radius: 8px;
+    }
+
+    /* Submit button hover designs */
+    input[type=submit]:hover {
+        background-color: #0066ff;
+    }
+
+    .form-border {
+        text-align: center;
+        margin: 20vh 20vw 0;
+        padding-top: 3vh;
+        padding-bottom: 8vh;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: #e6f0ff;
+        width: 400px;
+    }
+
+    .form-header {
+        font-family: Nunito;
+        color: dimgrey;
+    }
+
+    .error {
+        color: red;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Portfolio thumbnail size */
+    .portfolioPics {
+        max-width: 20vw;
+        min-width: 225px;
+        height: auto;
+        text-align: center;
+    }
+
+    /* Each element of a post display is in block element */
+    .post {
+        display: block;
+    }
+
+@media only screen and (min-width: 768px) {
+
+    nav ul a {
+        padding: 0px 75px;
+    }
+
+    col
+}

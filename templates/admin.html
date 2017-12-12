@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if 'username' not in session %}
+        <div class="container">
+            <form action="/admin" method="post" class="form-border">
+                <div>
+                    <div>
+                        <h2 class="form-header">Admin Login</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <div>
+                                <div>
+                                    <label for="username"><input type="text" name="username" value="{{ username }}" placeholder="Username"/></label>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div>
+                                <div>
+                                    <label for="password"><input type="password" name="password" value="{{ password }}" placeholder="Enter password"/></label>
+                                </div>
+                            </div>
+                        </tr>
+                    </table>
+                    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+                    {% if errors %}
+                    <div class="container">
+                        <ul class="error">
+                            {% for error in errors %}
+                            <li>{{ error }}</li>
+                            {% endfor  %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                    <div>
+                        <input type="submit" value="Log in"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    {% elif 'username' in session %}
+        <div class="container">
+            <form action="/logout" class="form-border">
+                <input type="submit" value="Logout"/>
+            </form>
+        </div>
+    {% endif %}
+
+{% endblock %}

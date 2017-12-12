@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        {% if 'username' in session %}
+            <div class="row">
+            {% if posts %}
+            {% for post in posts %}
+                <div class="col-sm-4" style="text-align: center; height: 300px;">
+                    <div class="post">
+                        <img class="portfolioPics" src="{{ url_for('static', filename='images/' + post.image_path ) }}">
+                    </div>
+                    <div class="post">
+                        <a>{{ post.title }}</a>
+                    </div>
+                    <div class="post">
+                        <p>{{ post.summary }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            {% endif %}
+
+                <div class="col-sm-4" style="text-align: center;">
+                        <a href="/add-post"><i style="font-size:24px" class="fa">&#xf196;</i></a>
+                </div>
+            </div>
+
+        {% elif 'username' not in session %}
+            <div class="row">
+            {% if posts %}
+                {% for post in posts %}
+                    <div class="col-sm-4" style="text-align: center; height: 300px;">
+                        <div class="post">
+                            <img class="portfolioPics" src="{{ url_for('static', filename='images/' + post.image_path ) }}">
+                        </div>
+                        <div class="post">
+                            <a>{{ post.title }}</a>
+                        </div>
+                        <div class="post">
+                            <p>{{ post.summary }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

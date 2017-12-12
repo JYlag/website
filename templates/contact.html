@@ -2,10 +2,13 @@
 
 {% block content %}
 
-<div class="border row">
-    <div class="col-sm-5">
-        <img id="contact_photo" src="{{ url_for('static', filename='images/contactPhoto1.jpg') }}">
-        <h2 style="padding-top: 10px; font-family: Dosis;font-weight: 800;">Thanks for visiting!</h2>
+<div class="container">
+    <div class="col-sm-6" style="text-align: center; margin-bottom: 3rem;">
+        <div>
+            <img id="contact_photo" src="{{ url_for('static', filename='images/contactPhoto1.jpg') }}">
+            <h2 style="padding-top: 10px; font-family: Dosis;font-weight: 800;">\* Thanks for visiting *\</h2>
+            <p>Send me a message!</p>
+        </div>
         <div>
             <form action="/contact" method="post">
                 <div>
@@ -26,7 +29,8 @@
             </form>
         </div>
     </div>
-    <div class="col-sm-7">
+    <hr/>
+    <div class="col-sm-6" style="margin-top: 3rem;">
         <h3 style="text-align: center; font-family: Dosis; font-weight: 700;">Salutations!</h3>
         <br/>
         <p>Welcome to my website. First and foremost, let me introduce myself and tell you a little about who I am. My name is Joseph Emmanuel Ylagan, but please call me Joe. I'm from West Seattle and I like to code.
@@ -39,6 +43,7 @@
             and specialized in algorithms+data structures. I am very passionate about tech and I believe I have the potential and savviness to make a impact
             wherever I go! I currently already work in the IT field as an IT Support Technician (@ Alaska Airlines) so the skills I utilize in my job can be transferable as I make my transition.
         </p>
+        <hr>
         <div class="nav justify-content-center">
             <div id="social">
                 <a href="https://www.facebook.com/profile.php?id=100000061482346&ref=br_rs" class="fa fa-facebook"></a>

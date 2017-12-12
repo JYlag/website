@@ -1,0 +1,44 @@
+#contact_photo {
+    height: 300px;
+    border: 2px solid dimgrey;
+    border-radius: 200px;
+}
+
+/* Form field designs */
+input[type=text], input[type=password], textarea {
+    width: 95%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid dimgrey;
+    border-radius: 8px;
+}
+
+/* Submit button designs */
+input[type=submit] {
+    background-color: #3385ff;
+    color: white;
+    width: 95%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1.5px solid #3385ff;
+    border-radius: 8px;
+}
+
+/* Submit button hover designs */
+input[type=submit]:hover {
+    background-color: #0066ff;
+}
+
+/* Social media icons */
+#social a {
+    text-decoration: none;
+}
+
+/* Centers the social media icons and spaces them evenly */
+.fa {
+    font-size: 25px;
+    text-align: center;
+    padding: 5vh 20px;
+}

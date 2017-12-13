@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="col-sm-6" style="text-align: center; margin-bottom: 3rem;">
+<div class="container-fluid row">
+    <div class="col-sm-6" style="text-align: center; margin-bottom: 3rem; max-width: 100%;">
         <div>
             <img id="contact_photo" src="{{ url_for('static', filename='images/contactPhoto1.jpg') }}">
             <h2 style="padding-top: 10px; font-family: Dosis;font-weight: 800;">\* Thanks for visiting *\</h2>
@@ -12,44 +12,48 @@
         <div>
             <form action="/contact" method="post">
                 <div>
-                    <tr>
+                    <div>
                         <td><label for="name"></label></td>
                         <td>
-                            <input type="text" name="name" value="{{ name }}" placeholder="Enter your name" style="width: 300px;">
+                            <input type="text" name="name" value="{{ name }}" placeholder="Enter your name">
                         </td>
-                    </tr>
-                    <tr>
+                    </div>
+                    <div>
                         <td><label for="message"></label></td>
                         <td>
-                            <textarea name="message" type="text" value="{{ message }}" placeholder="Got anything you want to tell me?" style="width: 300px; height: 150px;"></textarea>
+                            <textarea name="message" type="text" value="{{ message }}" placeholder="Got anything you want to tell me?" style="height: 150px;"></textarea>
                         </td>
-                    </tr>
+                    </div>
                 </div>
                 <input type="submit" value="Send!">
             </form>
         </div>
     </div>
     <hr/>
-    <div class="col-sm-6" style="margin-top: 3rem;">
-        <h3 style="text-align: center; font-family: Dosis; font-weight: 700;">Salutations!</h3>
-        <br/>
-        <p>Welcome to my website. First and foremost, let me introduce myself and tell you a little about who I am. My name is Joseph Emmanuel Ylagan, but please call me Joe. I'm from West Seattle and I like to code.
-            If I'm not coding, im usually on the basketball court breaking ankles // posing in everyone's snapchat // asking for the last bite of your burger. Here, I will post about
-            me and things that I enjoy. Thank you for visiting and on to the more serious side of me.
-        </p>
+    <div class="col-sm-6" style="margin-top: 3rem; max-width: 100%;">
+        <div id="contact_block">
+            <h3 style="text-align: center; font-family: Dosis; font-weight: 700;">Salutations!</h3>
+            <br/>
+            <p>Welcome to my website. First and foremost, let me introduce myself and tell you a little about who I am. My name is Joseph Emmanuel Ylagan, but please call me Joe. I'm from West Seattle and I like to code.
+                If I'm not coding, im usually on the basketball court breaking ankles // posing in everyone's snapchat // asking for the last bite of your burger. Here, I will post about
+                me and things that I enjoy. Thank you for visiting and on to the more serious side of me.
+            </p>
 
-        <p>I am a highly motivated, young professional seeking for opportunities as a Software Developer. I just
-            graduated from a program called <a href="https://www.launchcode.org/">LaunchCode</a> where, of course, I learned to code. I learned coding techniques,
-            and specialized in algorithms+data structures. I am very passionate about tech and I believe I have the potential and savviness to make a impact
-            wherever I go! I currently already work in the IT field as an IT Support Technician (@ Alaska Airlines) so the skills I utilize in my job can be transferable as I make my transition.
-        </p>
-        <hr>
-        <div class="nav justify-content-center">
-            <div id="social">
-                <a href="https://www.facebook.com/profile.php?id=100000061482346&ref=br_rs" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/jylag__/" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/joseph-ylagan-a21898bb/" class="fa fa-linkedin"></a>
-                <a href="https://github.com/JYlag" class="fa fa-github"></a>
+            <p>I am a highly motivated, young professional seeking for opportunities as a Software Developer. I just
+                graduated from a program called <a href="https://www.launchcode.org/">LaunchCode</a> where, of course, I learned to code. I learned coding techniques,
+                and specialized in algorithms+data structures. I am very passionate about tech and I believe I have the potential and savviness to make a impact
+                wherever I go! I currently already work in the IT field as an IT Support Technician (@ Alaska Airlines) so the skills I utilize in my job can be transferable as I make my transition.
+            </p>
+
+            <hr>
+
+            <div class="nav justify-content-center">
+                <div id="social">
+                    <a href="https://www.facebook.com/profile.php?id=100000061482346&ref=br_rs" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/jylag__/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/joseph-ylagan-a21898bb/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/JYlag" class="fa fa-github"></a>
+                </div>
             </div>
         </div>
     </div>

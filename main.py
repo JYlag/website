@@ -1,4 +1,4 @@
-from flask import request, redirect, render_template, session, flash
+from flask import Flask, request, redirect, render_template, session, flash
 from app import app, db
 from models import Post, User
 from hashutils import check_pw_hash, make_pw_hash

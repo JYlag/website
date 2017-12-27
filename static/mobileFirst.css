@@ -1,3 +1,8 @@
+#home_photo {
+    height: 93vh;
+    width: 99vw;
+}
+
 #contact_photo {
     height: 300px;
     border: 2px solid dimgrey;

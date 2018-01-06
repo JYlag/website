@@ -121,7 +121,8 @@
     .portfolioPics {
         max-width: 20vw;
         min-width: 225px;
-        height: auto;
+        height: 300px;
+        width: 300px;
         text-align: center;
     }
 

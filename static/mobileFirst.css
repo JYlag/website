@@ -68,9 +68,19 @@ p {
     padding: 5vh 20px;
 }
 
-.post {
+post {
+    height: 300px;
+}
+
+.post_elements {
     display: block;
 }
+
+.portfolioPics {
+    width: 90%;
+    text-align: center;
+}
+
 /* navigation bar */
 nav ul a {
     font-family: Nunito;
